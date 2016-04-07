@@ -1,0 +1,16 @@
+import time
+
+tempscourant=time.time()
+limite=time.time() -1
+delai=1
+nombre=0
+def faire():
+    print("coucou")
+
+while nombre < 20:
+    if tempscourant > limite:
+        faire()
+        limite += delai
+        tempscourant = time.time()
+        nombre+=1
+    tempscourant = time.time()
